@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <title>Fedi Photo Change Log</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fedi_photo200x200.png">
+</head>
+
+<body>
+  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
+  <ul>
+    <li>v2.6 Sunday June 14, 2020</li>
+    <ul>
+      <li>Fixed posting to PixelFed.</li>
+      <li>Fixed bugs relating to visibility.</li>
+      <li>Added prompt to delete workers if they are over a day old.</li>
+    </ul>
+    <li>v2.5 Saturday June 13, 2020</li>
+    <ul>
+      <li>Forgot to commit version bump for tagged release.</li>
+    </ul>
+    <li>v2.4 June 13, 2020</li>
+    <ul>
+      <li>Localization by <a href='https://github.com/xmgz'>xmgz</a>.</li>
+      <ul>
+        <li>Galician</li>
+        <li>Spanish</li>
+      </ul>
+      <li>README updated</li>
+    </ul>
+    <li>v2.2 June 5, 2020</li>
+    <ul>
+      <li>Use Locale.US when formatting GPS coordinates into the map URL. This will prevent some languages from using a comma instead of a period for the decimal place.</li>
+    </ul>
+    <li>v2.1 November 29, 2019</li>
+    <ul>
+      <li>Changed the default mapping URL from Google Maps to Open Street Map (OSM).</li>
+    </ul>
+    <li>v2.0 September 15, 2019</li>
+    <ul>
+      <li>Add location permission to manifest. Needed to get the GPS coordinates from the photo Exif interface.</li>
+    </ul>
+    <li>v1.9 September 15, 2019</li>
+    <ul>
+      <li>Changed string format for GPS coordinates to float so you can control the number of decimal places.</li>
+    </ul>
+    <li>v1.8 August 8, 2019</li>
+    <ul>
+      <li>Fix visibility of worker classes.</li>
+    </ul>
+    <li>v1.7 August 18, 2019</li>
+    <ul>
+      <li>Fixed some code issues that the inspection tool listed.</li>
+      <li>Added About menu item that sends the user to https://fediphoto.com</li>
+      <li>Changed photo file name prefix from Fedi_Photo_ to just photo_.</li>
+      <li>Send notification before the photo is moved, copied, or deleted.</li>
+    </ul>
+    <li>v1.6 August 8, 2019</li>
+    <ul>
+      <li>Added fastlane directory structure to assist F-Droid builds.</li>
+    </ul>
+    <li>August 6, 2019</li>
+    <ul>
+      <li>Handle deleting last account and last status without crashing app.</li>
+    </ul>
+    <li>August 4, 2019</li>
+    <ul>
+      <li>Add notifications</li>
+      <li>Use WorkManager chaining to ensure photo is uploaded and post is made regardless of network conditions</li>
+    </ul>
+  </ul>
+</body>
+
+</html>

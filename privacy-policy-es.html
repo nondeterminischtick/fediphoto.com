@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fedi Photo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fedi_photo200x200.png">
+</head>
+
+<body>
+  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
+    <!-- add language links -->
+  <p><a href='/'>ENG</a> &#8212; <a href="index-es.html">ESP</a></p>
+  <h1>Política de Privacidad</h1>
+  <p>La información de la cuenta incluyendo nombre de usuario, dominio de la instancia y el token de OAuth se guardan en el dispositivo en un fichero llamado settings.json.
+    Al eliminar la app la información de la cuenta se destruye.</p>
+  <p>Las fotos se guardan en el dispositivo y se publican en el Fediverso. En la configuración se puede borrar, copiar o mover a la carpeta Pictures en Android.</p>
+  <p>Compartir la localización es opcional. La longitud y latitud se extraen de la fotografía utilizando
+    <a href='https://developer.android.com/reference/androidx/exifinterface/media/ExifInterface'>ExifInterface</a> sólo si has elegido guardar la localización en tus fotografías. Puedes  configurar la publicación de la localización utilizando dos argumentos de formato <b>%.5f</b>.</p>
+  <p>Compartir la marca horaria de la foto también es opcional. Puedes modificar el formato usando sintaxis <a href='https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html'>Simple Date Format</a> de Java.</p>
+  <p>Todo se transmite con SSL.</p>
+  <h3>Permisos requeridos</h3>
+  <ul>
+    <li>android.permission.ACCESS_NETWORK_STATE</li>
+    <li>android.permission.CAMERA</li>
+    <li>android.permission.INTERNET</li>
+    <li>android.permission.READ_EXTERNAL_STORAGE</li>
+    <li>android.permission.RECEIVE_BOOT_COMPLETED</li>
+    <li>android.permission.WAKE_LOCK</li>
+    <li>android.permission.WRITE_EXTERNAL_STORAGE</li>
+  </ul>
+</body>
+
+</html>

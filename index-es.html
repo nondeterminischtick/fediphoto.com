@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fedi Photo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fedi_photo200x200.png">
+</head>
+
+<body>
+  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
+  <!-- add language links -->
+  <p><a href='/'>ENG</a> &#8212; <a href="index-es.html">ESP</a></p>
+  <p><strong>App Android para publicar fácilmente fotografías en el Fediverso.</strong></p>
+  <p>He escrito esta aplicación porque tenía una espinita clavada: no poder publicar de un modo sencillo mis fotografías mientras hago mis salidas en bicicleta.</p>
+  <p>Configuras con anterioridad el texto y las etiquetas para el mensaje. Después simplemente con 3 clicks publicas la foto.</p>
+  <ol>
+    <li>Click para la cámara.</li>
+    <li>Encuadrar y hacer la foto.</li>
+    <li>Click para aceptar y listo! </li>
+  </ol>
+  <p>El texto del mensaje y la publicación se realizan en segundo plano. Si la conectividad no es buena, se realizará al recuperarla.</p>
+  <h4>Otras características</h4>
+  <ul>
+    <li>Varias cuentas.</li>
+    <li>Varias configuraciones para la publicación.</li>
+    <li>Formato de la fecha personalizable usando <a href='https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html'>Java Simple Date Format</a>.
+          <br>El formato por defecto es: <xmp>EEEE MMMM dd, yyyy hh:mm:ss a z</xmp></li>
+    <li>URL de la longitud y latitud o texto personalizables. Utilizando dos argumentos con <strong>%.5f</strong>. 
+          <br>El formato por defecto es: <xmp>https://openstreetmap.org?zoom=17&layers=m&mlat=%.5f&mlon=%.5f</xmp> 
+          <br>Si prefieres Google Maps: <xmp>https://www.google.com/maps/search/?api=1&query=%.5f,%.5f</xmp></li>
+    <li>Despues de publicar la foto, la app puede</li>
+    <ul>
+      <li>dejar la foto en Fedi Photo</li>
+      <li>copiar la foto a la carpeta Android Pictures</li>
+      <li>mover la foto a la carpeta Android Pictures</li>
+      <li>eliminar la foto</li>
+    </ul>
+  </ul>
+  <p><b>Aviso:</b> Mis conocimientos de programación no provienen de una educación formal para Android, por lo que tu experiencia puede ser insatisfactoria. Si encuentras errores, por favor abre un <a href='https://github.com/pla1/FediPhoto/issues'>issue</a> en github.</p>
+  <p><a href='https://play.google.com/store/apps/details?id=com.fediphoto'>Google Play Store</a></p>
+  <p><a href='https://f-droid.org/en/packages/com.fediphoto'>F-Droid</a></p>
+  <p><a href='https://github.com/pla1/FediPhoto'>Código fuente</a></p>
+  <p><a href='https://github.com/pla1/FediPhoto/issues'>Informar de fallos</a></p>
+  <p><a href='changeLog.html'>Registro de cambios</a></p>
+  <p><a href='privacy-policy-es.html'>Política de Privacidad</a></p>
+</body>
+
+</html>

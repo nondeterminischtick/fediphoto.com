@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fedi Photo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fedi_photo200x200.png">
+</head>
+
+<body>
+  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
+  <!-- add language links -->
+  <p><a href='/'>ENG</a> &#8212; <a href="index-es.html">ESP</a></p>
+  <p><strong>Anrdoid app to quickly post photos to the Fediverse.</strong></p>
+  <p>I wrote this app to scratch an itch which was to post photos to the Fediverse frictionlessly while riding my bike.</p>
+  <p>You configure the text and hashtags for the status ahead of time. Then with 3 clicks post a photo.</p>
+  <ol>
+    <li>Click for camera.</li>
+    <li>Frame subject and click to take photo.</li>
+    <li>Click to accept photo and you are done. </li>
+  </ol>
+  <p>The posting of the photo and status text is performed in the background. If connectivity is bad it will upload when connectivity allows.</p>
+  <h4>Other features</h4>
+  <ul>
+    <li>Multiple accounts.</li>
+    <li>Multiple status configurations.</li>
+    <li>Optional customizable date format using <a href='https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html'>Java Simple Date Format</a>.
+          <br>The default format string is: <xmp>EEEE MMMM dd, yyyy hh:mm:ss a z</xmp></li>
+    <li>Optional customizable latitude and longitude URL or text. Using two format arguments <b>%.5f</b>. 
+          <br>The default format string is: <xmp>https://openstreetmap.org?zoom=17&layers=m&mlat=%.5f&mlon=%.5f</xmp> 
+          <br>If you prefer Google Maps: <xmp>https://www.google.com/maps/search/?api=1&query=%.5f,%.5f</xmp></li>
+    <li>After the photo is posted the app can</li>
+    <ul>
+      <li>Leave photo in the Fedi Photo folder</li>
+      <li>Copy the photo to the Android Pictures folder</li>
+      <li>Move the photo to the Android Pictures folder</li>
+      <li>Delete the photo</li>
+    </ul>
+  </ul>
+  <p><b>Disclaimer:</b> I am not a formally trained programmer so your mileage may vary with this app. When you find bugs please create an <a href='https://github.com/pla1/FediPhoto/issues'>issue</a>.</p>
+  <p><a href='https://play.google.com/store/apps/details?id=com.fediphoto'>Google Play Store</a></p>
+  <p><a href='https://f-droid.org/en/packages/com.fediphoto'>F-Droid</a></p>
+  <p><a href='https://github.com/pla1/FediPhoto'>Source code</a></p>
+  <p><a href='https://github.com/pla1/FediPhoto/issues'>Bug reports</a></p>
+  <p><a href='changeLog.html'>Change log</a></p>
+  <p><a href='privacy-policy.html'>Privacy policy</a></p>
+</body>
+
+</html>

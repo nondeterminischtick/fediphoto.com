@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fedi Photo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fedi_photo200x200.png">
+</head>
+
+<body>
+  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
+  <h1>Privacy Policy</h1>
+  <p>Account information including user name, instance domain name, and OAuth token is stored on the device in a file named settings.json.
+    When you delete this app the account information is destroyed.</p>
+  <p>Photos are stored on the device and posted to the Fediverse. A setting allows
+    for photos after posting to be deleted, moved, or copied to the Android Pictures folder.</p>
+  <p>Sharing photo location is optional. The latitude and longitude is extracted from the photo using
+    <a href='https://developer.android.com/reference/androidx/exifinterface/media/ExifInterface'>ExifInterface</a> only if
+    you have choosen to store location in your photos. You can configure a status to use latitude and logitude using two format arguments <b>%.5f</b>.</p>
+  <p>Sharing a photo timestamp is optional. You can modify the timestamp format using Java's <a href='https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html'>Simple Date Format</a> syntax.</p>
+  <p>All transmissions are over SSL.</p>
+  <h3>Required Permissions</h3>
+  <ul>
+    <li>android.permission.ACCESS_NETWORK_STATE</li>
+    <li>android.permission.CAMERA</li>
+    <li>android.permission.INTERNET</li>
+    <li>android.permission.READ_EXTERNAL_STORAGE</li>
+    <li>android.permission.RECEIVE_BOOT_COMPLETED</li>
+    <li>android.permission.WAKE_LOCK</li>
+    <li>android.permission.WRITE_EXTERNAL_STORAGE</li>
+  </ul>
+</body>
+
+</html>
