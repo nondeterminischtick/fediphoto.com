@@ -1,50 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fedi Photo</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="An Android app to quickly post photos to the Fediverse">
+		<meta name="author" content="PLA">
+		<meta property="og:url" content="https://fediphoto.com/index.html">
+		<meta property="og:title" content="Fedi Photo">
+		<meta property="og:description" content="An Android app to quickly post photos to the Fediverse">
+		<link rel="icon" href="img/logo.png">
+		<link type="text/css" rel="stylesheet" href="css/spectre.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/spectre-icons.min.css" />
+		<link rel="canonical" href="https://fediphoto.com/index.html">
+		<style>
+			.bg-yellow{background:#ffff00!important;color:#3b4351}
+			ul.menumob {list-style-type: none;}
+			.coolshadow{box-shadow:0px 1px 10px 1px grey;}
+		</style>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Fedi Photo</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="fedi_photo200x200.png">
-</head>
+	<body>
 
-<body>
-  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
-  <!-- add language links -->
-  <p><a href='/'>ENG</a> &#8212; <a href="index-es.html">ESP</a></p>
-  <p><strong>Anrdoid app to quickly post photos to the Fediverse.</strong></p>
-  <p>I wrote this app to scratch an itch which was to post photos to the Fediverse frictionlessly while riding my bike.</p>
-  <p>You configure the text and hashtags for the status ahead of time. Then with 3 clicks post a photo.</p>
-  <ol>
-    <li>Click for camera.</li>
-    <li>Frame subject and click to take photo.</li>
-    <li>Click to accept photo and you are done. </li>
-  </ol>
-  <p>The posting of the photo and status text is performed in the background. If connectivity is bad it will upload when connectivity allows.</p>
-  <h4>Other features</h4>
-  <ul>
-    <li>Multiple accounts.</li>
-    <li>Multiple status configurations.</li>
-    <li>Optional customizable date format using <a href='https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html'>Java Simple Date Format</a>.
-          <br>The default format string is: <xmp>EEEE MMMM dd, yyyy hh:mm:ss a z</xmp></li>
-    <li>Optional customizable latitude and longitude URL or text. Using two format arguments <b>%.5f</b>. 
-          <br>The default format string is: <xmp>https://openstreetmap.org?zoom=17&layers=m&mlat=%.5f&mlon=%.5f</xmp> 
-          <br>If you prefer Google Maps: <xmp>https://www.google.com/maps/search/?api=1&query=%.5f,%.5f</xmp></li>
-    <li>After the photo is posted the app can</li>
-    <ul>
-      <li>Leave photo in the Fedi Photo folder</li>
-      <li>Copy the photo to the Android Pictures folder</li>
-      <li>Move the photo to the Android Pictures folder</li>
-      <li>Delete the photo</li>
-    </ul>
-  </ul>
-  <p><b>Disclaimer:</b> I am not a formally trained programmer so your mileage may vary with this app. When you find bugs please create an <a href='https://github.com/pla1/FediPhoto/issues'>issue</a>.</p>
-  <p><a href='https://play.google.com/store/apps/details?id=com.fediphoto'>Google Play Store</a></p>
-  <p><a href='https://f-droid.org/en/packages/com.fediphoto'>F-Droid</a></p>
-  <p><a href='https://github.com/pla1/FediPhoto'>Source code</a></p>
-  <p><a href='https://github.com/pla1/FediPhoto/issues'>Bug reports</a></p>
-  <p><a href='changeLog.html'>Change log</a></p>
-  <p><a href='privacy-policy.html'>Privacy policy</a></p>
-</body>
+		<!-- Desktop Menu -->
+		<header class="navbar bg-yellow hide-sm coolshadow">
+			<section class="navbar-section bg-yellow">
+				<a href="index.html" class="navbar-brand px-2 text-dark"><b>Fedi Photo</b></a>
+			</section>
+			<section class="navbar-section bg-yellow">
+				<a href="https://github.com/pla1/FediPhoto" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Source Code"><i class="text-dark icon icon-resize-horiz"></i></a>
+				<a href="https://github.com/pla1/FediPhoto/issues" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Bug Reports"><i class="text-dark icon icon-flag"></i></a>
+				<a href="changeLog.html" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Changelog"><i class="text-dark icon icon-edit"></i></a>
+				<a href="privacy-policy.html" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Privacy Policy"><i class="text-dark icon icon-stop"></i></a>
+				
+				<div class="divider-vert"></div>
+			
+				<ul class="tab tab-block bg-yellow">
+					<li class="tab-item active">
+						<a class="text-dark" href="#">EN</a>
+					</li>
+					<li class="tab-item">
+						<a class="text-dark" href="index-es.html">ES</a>
+					</li>
+					<li class="tab-item">
+						<a class="text-dark" href="index-gl.html">GL</a>
+					</li>
+					<li class="tab-item">
+						<a class="text-dark" href="index-it.html">IT</a>
+					</li>
+				</ul>
+			</section>
+		</header>
 
+		<!-- Mobile Menu -->
+		<div class="bg-yellow show-sm coolshadow"> 
+			<details class="accordion">
+				<summary class="accordion-header">
+					<i class="icon icon-arrow-right mr-1"></i>
+					Fedi Photo
+				</summary>
+				<div class="accordion-body">
+					<ul class="menumob">
+						<li><a class="text-dark" href="https://github.com/pla1/FediPhoto">Source Code</a></li>
+						<li><a class="text-dark" href="https://github.com/pla1/FediPhoto/issues">Bug Reports</a></li>
+						<li><a class="text-dark" href="changeLog.html">Changelog</a></li>
+						<li><a class="text-dark" href="privacy-policy.html">Privacy Policy</a></li>
+					</ul>
+					<details class="accordion">
+						<summary class="accordion-header">
+							<i class="icon icon-apps mr-1"></i>
+							Language
+						</summary>
+						<div class="accordion-body">
+							<ul class="menumob">
+								<li><a class="text-dark" href="#">EN</a></li>
+								<li><a class="text-dark" href="index-es.html">ES</a></li>
+								<li><a class="text-dark" href="index-gl.html">GL</a></li>
+								<li><a class="text-dark" href="index-it.html">IT</a></li>
+							</ul>
+						</div>
+					</details>
+				</div>
+			</details>
+		</div>
+
+		<!-- Main Content -->
+		<div class="container grid-xl">
+			<div class="columns">
+				<div class="column col-9 col-mx-auto">
+
+				<!-- Logo and download buttons -->
+				<div class="grid-hero container grid-lg text-center" id="overview">
+					<div class="docs-brand">
+						<a class="docs-logo" href="index.html"><img src="img/logo.svg" alt="Fedi Photo Logo"></a>
+					</div>
+					<h1>Fedi Photo</h1>
+					<h3>An Android app to quickly post photos to the Fediverse</h3>
+					<p>
+						<a  href="https://f-droid.org/packages/com.fediphoto/"><img src="img/fdroid.png"
+						alt="Get it on F-Droid"
+						height="80"></a>
+						<a  href="https://play.google.com/store/apps/details?id=com.fediphoto"><img src="img/play.png"
+						alt="Get it on Play Store"
+						height="80"></a>
+					</p>
+				</div>
+
+				<!-- Brief instructions -->
+				<p>I wrote this app to scratch an itch which was to post photos to the Fediverse frictionlessly while riding my bike.</p>
+				<p>You configure the text and hashtags for the status ahead of time. Then with 3 clicks post a photo.</p>
+				<ol>
+					<li>Click for camera.</li>
+					<li>Frame subject and click to take photo.</li>
+					<li>Click to accept photo and you are done.</li>
+				</ol>
+				<p>The posting of the photo and status text is performed in the background. If connectivity is bad it will upload when connectivity allows.</p>
+
+				<!-- Full features -->
+				<div class="divider"></div>
+				<br />
+				<h3>Other features</h3>
+				<ul>
+					<li>Multiple accounts.</li>
+					<li>Multiple status configurations.</li>
+					<li>Optional customizable date format using Java's <a class="text-success" href='https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html'>Simple Date Format</a> syntax.
+						<br />The default format string is: <code>EEEE MMMM dd, yyyy hh:mm:ss a z</code></li>
+					<li>Optional customizable latitude and longitude URL or text. Using two format arguments <b>%.5f</b>. 
+						<br />The default format string is: <code>https://openstreetmap.org?zoom=17&layers=m&mlat=%.5f&mlon=%.5f</code> 
+						<br />If you prefer Google Maps: <code>https://www.google.com/maps/search/?api=1&query=%.5f,%.5f</code></li>
+					<li>After the photo is posted the app can:
+						<ul>
+							<li>Leave photo in the Fedi Photo folder</li>
+							<li>Copy the photo to the Android Pictures folder</li>
+							<li>Move the photo to the Android Pictures folder</li>
+							<li>Delete the photo</li>
+						</ul></li>
+				</ul>
+				<br />
+				
+				<!-- Disclaimer -->
+				<div class="bg-warning text-center p-2 s-rounded col-mx-auto">
+					<h5 class="text-uppercase"><b>Disclaimer</b></h5>
+					<p>I am not a formally trained programmer so your mileage may vary with this app.<br />
+					When you find bugs please create an <a class="text-dark" href='https://github.com/pla1/FediPhoto/issues'>issue</a>.</p> 
+				</div>
+				<br /><br />
+				
+				</div>
+			</div>
+		</div>
+  
+  
+		<!-- Footer -->
+		<footer class="bg-gray pt-2">
+			<div class="columns pt-2">
+				<div class="column col-5 col-mx-auto">
+					<h5 class="text-right">Fedi Photo</h5>
+					<p class="text-right">An Android app to quickly post photos to the Fediverse</p>
+				</div>
+				<div class="divider-vert"></div>
+				<div class="column col-5 col-mx-auto">
+					<h5 class="">Other projects</h5>
+					<ul>
+						<li><a class="text-dark" href="https://jediverse.com/">Jediverse</a></li>
+						<li><a class="text-dark" href="https://gpembed.com/">Google Photos Embed</a></li>
+						<li><a class="text-dark" href="https://ipaddress.rocks/">ipaddress.rocks</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="columns bg-yellow p-2 coolshadow">
+				<div class="column col-11 col-mx-auto text-center">
+					© 2020 <a href="https://pla.social/users/pla">PLA</a> - Designed by <a href="https://bikeshed.party/users/silkevicious">Sylke Vicious</a> - Based on <a href="https://picturepan2.github.io/spectre/">Spectre.css</a> framework, which is licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE">MIT License</a>.
+				</div>
+				<div class="column col-11 col-mx-auto p-2 text-center">
+					<a href="https://html5.validator.nu/?doc=https%3A%2F%2Ffediphoto.com"><img style="border:0;width:88px;height:31px" src="img/html5.png" alt="HTML5 Valid" /></a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="img/css.gif" alt="CSS Valid" /></a>
+				</div>
+			</div>
+		</footer>
+			
+	</body>
 </html>
