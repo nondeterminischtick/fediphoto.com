@@ -1,94 +1,214 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fedi Photo Changelog</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="Changelog of Fedi Photo Releases">
+		<meta name="author" content="PLA">
+		<meta property="og:url" content="https://fediphoto.com/changeLog.html">
+		<meta property="og:title" content="Fedi Photo Changelog">
+		<meta property="og:description" content="Changelog of Fedi Photo Releases">
+		<link rel="icon" href="img/logo.png">
+		<link type="text/css" rel="stylesheet" href="css/spectre.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/spectre-icons.min.css" />
+		<link rel="canonical" href="https://fediphoto.com/changeLog.html">
+		<style>
+			.bg-yellow{background:#ffff00!important;color:#3b4351}
+			ul.menumob {list-style-type: none;}
+			.coolshadow{box-shadow:0px 1px 10px 1px grey;}
+		</style>
+	</head>
 
-<head>
-  <title>Fedi Photo Change Log</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="fedi_photo200x200.png">
-</head>
+	<body>
 
-<body>
-  <h1><a href='/'><img src='fedi_photo200x200.png' alt='Fedi Photo'></a></h1>
-  <ul>
-    <li>Unreleased</li>
-    <ul>
-      <li>Few more strings localized by <a href='https://github.com/xmgz'>xmgz</a>.</li>
-    </ul>
-    <li>v2.9 Monday June 22, 2020</li>
-    <ul>
-      <li>Added missing entries from strings.xml</li>
-    </ul>
-    <li>v2.8 Thursday June 18, 2020</li>
-    <ul>
-      <li>Added Euskera localization by Izaro</a></li>
-    </ul>
-    <li>v2.7 Wednesday June 17, 2020</li>
-    <ul>
-      <li>Added Italian localization by <a href='https://github.com/silkevicious'>Sylke Vicious</a></li>
-      <li>Added Catalan localization by <a href='https://github.com/splacat'>spla</a>
-    </ul>
-    <li>v2.6 Sunday June 14, 2020</li>
-    <ul>
-      <li>Fixed posting to PixelFed.</li>
-      <li>Fixed bugs relating to visibility.</li>
-      <li>Added prompt to delete workers if they are over a day old.</li>
-    </ul>
-    <li>v2.5 Saturday June 13, 2020</li>
-    <ul>
-      <li>Forgot to commit version bump for tagged release.</li>
-    </ul>
-    <li>v2.4 June 13, 2020</li>
-    <ul>
-      <li>Localization by <a href='https://github.com/xmgz'>xmgz</a>.</li>
-      <ul>
-        <li>Galician</li>
-        <li>Spanish</li>
-      </ul>
-      <li>README updated</li>
-    </ul>
-    <li>v2.2 June 5, 2020</li>
-    <ul>
-      <li>Use Locale.US when formatting GPS coordinates into the map URL. This will prevent some languages from using a comma instead of a period for the decimal place.</li>
-    </ul>
-    <li>v2.1 November 29, 2019</li>
-    <ul>
-      <li>Changed the default mapping URL from Google Maps to Open Street Map (OSM).</li>
-    </ul>
-    <li>v2.0 September 15, 2019</li>
-    <ul>
-      <li>Add location permission to manifest. Needed to get the GPS coordinates from the photo Exif interface.</li>
-    </ul>
-    <li>v1.9 September 15, 2019</li>
-    <ul>
-      <li>Changed string format for GPS coordinates to float so you can control the number of decimal places.</li>
-    </ul>
-    <li>v1.8 August 8, 2019</li>
-    <ul>
-      <li>Fix visibility of worker classes.</li>
-    </ul>
-    <li>v1.7 August 18, 2019</li>
-    <ul>
-      <li>Fixed some code issues that the inspection tool listed.</li>
-      <li>Added About menu item that sends the user to https://fediphoto.com</li>
-      <li>Changed photo file name prefix from Fedi_Photo_ to just photo_.</li>
-      <li>Send notification before the photo is moved, copied, or deleted.</li>
-    </ul>
-    <li>v1.6 August 8, 2019</li>
-    <ul>
-      <li>Added fastlane directory structure to assist F-Droid builds.</li>
-    </ul>
-    <li>August 6, 2019</li>
-    <ul>
-      <li>Handle deleting last account and last status without crashing app.</li>
-    </ul>
-    <li>August 4, 2019</li>
-    <ul>
-      <li>Add notifications</li>
-      <li>Use WorkManager chaining to ensure photo is uploaded and post is made regardless of network conditions</li>
-    </ul>
-  </ul>
+		<!-- Desktop Menu -->
+		<header class="navbar bg-yellow hide-sm coolshadow">
+			<section class="navbar-section bg-yellow">
+				<a href="index.html" class="navbar-brand px-2 text-dark"><b>Fedi Photo</b></a>
+			</section>
+			<section class="navbar-section bg-yellow">
+				<a href="https://github.com/pla1/FediPhoto" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Source Code"><i class="text-dark icon icon-resize-horiz"></i></a>
+				<a href="https://github.com/pla1/FediPhoto/issues" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Bug Reports"><i class="text-dark icon icon-flag"></i></a>
+				<a href="changeLog.html" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Changelog"><i class="text-dark icon icon-edit"></i></a>
+				<a href="privacy-policy.html" class="btn btn-link tooltip tooltip-bottom" data-tooltip="Privacy Policy"><i class="text-dark icon icon-stop"></i></a>
+			</section>
+		</header>
 
-  <p><a href='https://keepachangelog.com/en/1.0.0/'>keep a changelog</a></p>
-</body>
+		<!-- Mobile Menu -->
+		<div class="bg-yellow show-sm coolshadow"> 
+			<details class="accordion">
+				<summary class="accordion-header">
+					<i class="icon icon-arrow-right mr-1"></i>
+					Fedi Photo Changelog
+				</summary>
+				<div class="accordion-body">
+					<ul class="menumob">
+						<li><a class="text-dark" href="https://github.com/pla1/FediPhoto">Source Code</a></li>
+						<li><a class="text-dark" href="https://github.com/pla1/FediPhoto/issues">Bug Reports</a></li>
+						<li><a class="text-dark" href="changeLog.html">Changelog</a></li>
+						<li><a class="text-dark" href="privacy-policy.html">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</details>
+		</div>
 
+		<!-- Main Content -->
+		<div class="container grid-xl">
+			<div class="columns">
+				<div class="column col-9 col-mx-auto">
+
+					<!-- Logo and title -->
+					<div class="grid-hero container grid-lg text-center" id="overview">
+						<div class="docs-brand">
+							<a class="docs-logo" href="index.html"><img src="img/logo.svg" alt="Fedi Photo Logo"></a>
+						</div>
+						<h1>Fedi Photo</h1>
+						<h3>Changelog</h3>
+						
+					</div>
+
+					<!-- Changes -->
+					<div class="accordion-container">
+						<div class="accordion">
+							<input id="accordion-2020" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+							<label class="accordion-header c-hand" for="accordion-2020"><b>2020</b></label>
+							<div class="accordion-body">
+								<ul class="menu menu-nav">
+									<li class="menu-item"><b>Unreleased</b>
+										<ul>
+											<li>Few more strings localized by <a class="text-success" href='https://github.com/xmgz'>xmgz</a>.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.9 Monday June 22, 2020</b>
+										<ul>
+											<li>Added missing entries from strings.xml</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.8 Thursday June 18, 2020</b>
+										<ul>
+											<li>Added Euskera localization by <a class="text-success" href="https://pleroma.libretux.com/users/izaro">Izaro</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.7 Wednesday June 17, 2020</b>
+										<ul>
+											<li>Added Italian localization by <a class="text-success" href="https://github.com/silkevicious">Sylke Vicious</a></li>
+											<li>Added Catalan localization by <a class="text-success" href="https://github.com/splacat">spla</a>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.6 Sunday June 14, 2020</b>
+										<ul>
+											<li>Fixed posting to PixelFed.</li>
+											<li>Fixed bugs relating to visibility.</li>
+											<li>Added prompt to delete workers if they are over a day old.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.5 Saturday June 13, 2020</b>
+										<ul>
+											<li>Forgot to commit version bump for tagged release.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.4 June 13, 2020</b>
+										<ul>
+											<li>Added Galician and Spanish localization by <a class="text-success" href="https://github.com/xmgz">xmgz</a>.</li>
+											<li>README updated</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.2 June 5, 2020</b>
+										<ul>
+											<li>Use Locale.US when formatting GPS coordinates into the map URL. This will prevent some languages from using a comma instead of a period for the decimal place.</li>
+										</ul>
+									</li>
+								</ul>
+							  </div>
+						</div>
+						<div class="accordion">
+							<input id="accordion-2019" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+							<label class="accordion-header c-hand" for="accordion-2019"><b>2019</b></label>
+							<div class="accordion-body">
+								<ul class="menu menu-nav">
+									<li class="menu-item"><b>v2.1 November 29, 2019</b>
+										<ul>
+											<li>Changed the default mapping URL from Google Maps to Open Street Map (OSM).</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v2.0 September 15, 2019</b>
+										<ul>
+											<li>Add location permission to manifest. Needed to get the GPS coordinates from the photo Exif interface.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v1.9 September 15, 2019</b>
+										<ul>
+											<li>Changed string format for GPS coordinates to float so you can control the number of decimal places.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v1.8 August 8, 2019</b>
+										<ul>
+											<li>Fix visibility of worker classes.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v1.7 August 18, 2019</b>
+										<ul>
+											<li>Fixed some code issues that the inspection tool listed.</li>
+											<li>Added About menu item that sends the user to <a class="text-success" href="https://fediphoto.com">https://fediphoto.com</a></li>
+											<li>Changed photo file name prefix from Fedi_Photo_ to just photo_.</li>
+											<li>Send notification before the photo is moved, copied, or deleted.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>v1.6 August 8, 2019</b>
+										<ul>
+											<li>Added fastlane directory structure to assist F-Droid builds.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>August 6, 2019</b>
+										<ul>
+											<li>Handle deleting last account and last status without crashing app.</li>
+										</ul>
+									</li>
+									<li class="menu-item"><b>August 4, 2019</b>
+										<ul>
+											<li>Add notifications</li>
+											<li>Use WorkManager chaining to ensure photo is uploaded and post is made regardless of network conditions</li>
+										</ul>
+									</li>
+								</ul>
+							  </div>
+						</div>
+					</div>
+				<br /><br />
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="bg-gray pt-2">
+			<div class="columns pt-2">
+				<div class="column col-5 col-mx-auto">
+					<h5 class="text-right">Fedi Photo</h5>
+					<p class="text-right">An Android app to quickly post photos to the Fediverse</p>
+				</div>
+				<div class="divider-vert"></div>
+				<div class="column col-5 col-mx-auto">
+					<h5 class="">Other projects</h5>
+					<ul>
+						<li><a class="text-dark" href="https://jediverse.com/">Jediverse</a></li>
+						<li><a class="text-dark" href="https://gpembed.com/">Google Photos Embed</a></li>
+						<li><a class="text-dark" href="https://ipaddress.rocks/">ipaddress.rocks</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="columns bg-yellow p-2 coolshadow">
+				<div class="column col-11 col-mx-auto text-center">
+					© 2020 <a href="https://pla.social/users/pla">PLA</a> - Designed by <a href="https://bikeshed.party/users/silkevicious">Sylke Vicious</a> - Based on <a href="https://picturepan2.github.io/spectre/">Spectre.css</a> framework, which is licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE">MIT License</a>.
+				</div>
+				<div class="column col-11 col-mx-auto p-2 text-center">
+					<a href="https://html5.validator.nu/?doc=https%3A%2F%2Ffediphoto.com"><img style="border:0;width:88px;height:31px" src="img/html5.png" alt="HTML5 Valid" /></a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="img/css.gif" alt="CSS Valid" /></a>
+				</div>
+			</div>
+		</footer>
+			
+	</body>
 </html>
