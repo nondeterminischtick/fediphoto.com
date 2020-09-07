@@ -77,6 +77,18 @@
 							<label class="accordion-header c-hand" for="accordion-2020"><b>2020</b></label>
 							<div class="accordion-body">
 								<ul class="menu menu-nav">
+									<li class="menu-item"><b>v3.4 Monday September 7, 2020</b>
+										<ul>
+											<li>Changed default Open Street Map URL to avoid redirects which appear to cause the <a href='https://git.pleroma.social/pleroma/pleroma/-/issues/2119'>Pleroma preview method to choose random languages.</a></li>
+											<li>Added Status Config menu option to test the date format.</li>
+											<li>Added Status Config menu option to test the GPS coordinates format.</li>
+											<li>Changed the Status text field to be multiline.</li>
+											<li>Wrapped the Config Status view in scroll view in case the status text is long and using a low resolution device.</li>
+											<li>Bumped targetSdkVersion from 28 to 29.</li>
+											<li>Bumped dependencies versions to the latest for constraintlayout, runner, and espresso-core.</li>
+											<li>Removed key listener on the date format. Use the new Status Config menu option to test the date format.</li>
+										</ul>
+									</li>
 									<li class="menu-item"><b>v3.3 Saturday August 15, 2020</b>
 										<ul>
 											<li>gl & es strings localized by <a class="text-success" href='https://github.com/xmgz'>xmgz</a>.</li>
