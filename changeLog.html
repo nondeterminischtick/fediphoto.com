@@ -77,6 +77,11 @@
 							<label class="accordion-header c-hand" for="accordion-2020"><b>2020</b></label>
 							<div class="accordion-body">
 								<ul class="menu menu-nav">
+									<li class="menu-item"><b>v3.5 Saturday November 7, 2020</b>
+										<ul>
+											<li>Do not set content-length on POST. The length was incorrect when unicode characters are present. Length is set by the API anyway. <a href='https://github.com/pla1/FediPhoto/issues/18'>Issue 18</a>. Emoji characters in status configs work now.</li>
+										</ul>
+									</li>
 									<li class="menu-item"><b>v3.4 Monday September 7, 2020</b>
 										<ul>
 											<li>Changed default Open Street Map URL to avoid redirects which appear to cause the <a href='https://git.pleroma.social/pleroma/pleroma/-/issues/2119'>Pleroma preview method to choose random languages.</a></li>
